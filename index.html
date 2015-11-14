@@ -3,12 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Born HP</title>
+    <script src="js/lib/Three.js"></script>
+    <script src="js/lib/TrackballControls.js"></script>
+    <style media="screen">
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+    </style>
   </head>
-  <body style="background-color: black;">
+  <body>
 
   <canvas id="canvas" width="100%" height="100%"></canvas>
 
   </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script type="text/javascript" src="app/main.js"></script>
+  <!-- <script type="text/javascript" src="js/app/main.js"></script> -->
+  <script type="text/javascript" src="js/app/original.js"></script>
 </html>
