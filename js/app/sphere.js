@@ -66,7 +66,8 @@ function init() {
   controls.noZoom = false;
   controls.addEventListener( 'change', render );
 
-  transform( targets.sphere, 500 );
+  camera.position.z = 2000;
+  transform( targets.sphere, 2000 );
 
   window.addEventListener( 'resize', onWindowResize, false );
 
@@ -118,6 +119,8 @@ function animate() {
   TWEEN.update();
 
   controls.update();
+
+  console.log(camera.position.z)
 
 }
 
